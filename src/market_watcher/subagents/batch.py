@@ -84,15 +84,20 @@ def run_monday_scan(category: str = "Cloud Infrastructure") -> dict:
             parsed = {"summary": raw_output, "risk_count": 0,
                       "high_risks": [], "news_sources": [], "cert_alerts": [], "top_actions": []}
 
-        # Collect tool calls from run context
-        for msg in result.new_messages:
-            if hasattr(msg, "tool_calls") and msg.tool_calls:
-                for tc in msg.tool_calls:
+        # Collect tool calls from run context — defensive across SDK versions
+        try:
+            messages = getattr(result, "new_messages", None) or getattr(result, "new_items", None) or []
+            for msg in messages:
+                tcs = getattr(msg, "tool_calls", None) or []
+                for tc in tcs:
+                    fn = getattr(tc, "function", None)
                     tool_calls_log.append({
-                        "tool": tc.function.name if hasattr(tc, "function") else str(tc),
-                        "input": tc.function.arguments if hasattr(tc, "function") else "",
+                        "tool": getattr(fn, "name", str(tc)) if fn else str(tc),
+                        "input": getattr(fn, "arguments", "") if fn else "",
                         "status": "ok",
                     })
+        except Exception:
+            pass  # trace logging is nice-to-have, never block the scan
 
         save_trace(
             agent_name="batch",

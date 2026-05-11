@@ -47,14 +47,19 @@ def run_buyer_query(user_message: str, conversation_history: list | None = None)
         result = Runner.run_sync(agent, messages)
         response_text = result.final_output
 
-        for msg in result.new_messages:
-            if hasattr(msg, "tool_calls") and msg.tool_calls:
-                for tc in msg.tool_calls:
+        try:
+            messages = getattr(result, "new_messages", None) or getattr(result, "new_items", None) or []
+            for msg in messages:
+                tcs = getattr(msg, "tool_calls", None) or []
+                for tc in tcs:
+                    fn = getattr(tc, "function", None)
                     tool_calls_log.append({
-                        "tool": tc.function.name if hasattr(tc, "function") else str(tc),
-                        "input": tc.function.arguments if hasattr(tc, "function") else "",
+                        "tool": getattr(fn, "name", str(tc)) if fn else str(tc),
+                        "input": getattr(fn, "arguments", "") if fn else "",
                         "status": "ok",
                     })
+        except Exception:
+            pass
 
         messages.append({"role": "assistant", "content": response_text})
 
