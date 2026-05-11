@@ -29,6 +29,12 @@ def configure() -> None:
         # Defer the error to main.py / cli.py which shows a friendly banner.
         return
 
+    # Belt-and-braces: also export OPENAI_* env vars so any OpenAI client created
+    # by the agents SDK internally (bypassing set_default_openai_client) still
+    # hits Gemini's endpoint instead of OpenAI's.
+    os.environ["OPENAI_API_KEY"] = api_key
+    os.environ["OPENAI_BASE_URL"] = GEMINI_BASE_URL
+
     client = AsyncOpenAI(api_key=api_key, base_url=GEMINI_BASE_URL)
     set_default_openai_client(client, use_for_tracing=False)
     set_default_openai_api("chat_completions")
