@@ -1,0 +1,56 @@
+{
+  "supplier_id": "pega",
+  "name": "Pegasystems Inc.",
+  "category": "IT Software",
+  "subcategory": "Customer Decisioning & BPM",
+  "tier": "Approved",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "products": ["Pega Customer Decision Hub", "Pega Platform", "Pega Customer Service"],
+  "contract": {
+    "ref": "CNT-2022-0099",
+    "owner": "Marcus Bell",
+    "start": "2022-12-01",
+    "expiry": "2025-11-30",
+    "value_gbp": 780000,
+    "payment_terms": "Net 45",
+    "auto_renew": false
+  },
+  "financials": {
+    "revenue_usd_bn": 1.6,
+    "ebitda_margin_pct": 8.2,
+    "credit_rating": "B2",
+    "debt_to_equity": 2.1,
+    "dnb_risk_score": 4,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 6.1
+  },
+  "spend": {"ytd_gbp": 320000, "prior_year_gbp": 410000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "PEGA-ISO27001", "type": "ISO 27001", "expiry": "2026-06-15", "status": "Expiring Soon"},
+    {"cert_id": "PEGA-SOCII", "type": "SOC 2 Type II", "expiry": "2026-08-20", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2045,
+    "re100_committed": false,
+    "living_wage_accredited": false,
+    "modern_slavery_statement": true,
+    "scope3_reporting": false,
+    "ecovadis_score": 48
+  },
+  "gartner": {
+    "quadrant": "Niche Players",
+    "report": "Magic Quadrant for Multiexperience Development Platforms 2026",
+    "completeness_of_vision": 3.4,
+    "ability_to_execute": 3.2
+  },
+  "analyst_quotes": [
+    "Pega's decisioning hub remains technically strong for utilities and telecoms, though enterprise momentum is slowing. — Gartner, Q4 2025 (mock)",
+    "Activist investor pressure on cost structure could affect product roadmap stability in 2026–27. — Bloomberg, Feb 2026 (mock)"
+  ],
+  "risks": [
+    {"type": "Financial", "description": "Activist investor (Elliott Management) ~10% stake — strategic uncertainty and possible take-private", "severity": "High"},
+    {"type": "Contract", "description": "Contract expired Nov 2025 — running on rolling extensions while RFP underway", "severity": "High"},
+    {"type": "ESG", "description": "Low Ecovadis (48), no RE100, no Scope 3 — multiple ESG policy gaps", "severity": "Medium"}
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "RISK-IT-01",
+    "title": "Hyperscaler concentration",
+    "severity": "High",
+    "likelihood": "High",
+    "owner": "Emma Hartley",
+    "description": "Microsoft (£8.4m), Oracle (£3.1m) and SAP (£5.6m) collectively hold 68% of total IT software spend — high switching cost and pricing exposure.",
+    "mitigant": "Dual-source where feasible; benchmark renewals against open-source / second-tier alternatives.",
+    "open_actions": 3,
+    "trend": "stable"
+  },
+  {
+    "id": "RISK-IT-02",
+    "title": "Oracle software audit",
+    "severity": "High",
+    "likelihood": "Confirmed",
+    "owner": "Sarah Baines",
+    "description": "Active Oracle licensing audit (initiated Feb 2026). Exposure window estimated £600k–£1.2m. Legal engaged.",
+    "mitigant": "Engage Oracle LMS; commission independent ELP (Effective Licence Position) review.",
+    "open_actions": 5,
+    "trend": "rising"
+  },
+  {
+    "id": "RISK-IT-03",
+    "title": "SAP ECC end-of-support 2027",
+    "severity": "High",
+    "likelihood": "Certain",
+    "owner": "David Okafor",
+    "description": "On-premise ECC support ends Dec 2027. S/4HANA migration programme estimated £4.2m, 18-month timeline. Decision overdue.",
+    "mitigant": "Approve migration BC by Q2 2026; consider RISE with SAP commercial bundle.",
+    "open_actions": 7,
+    "trend": "rising"
+  },
+  {
+    "id": "RISK-IT-04",
+    "title": "GenAI add-on cost trajectory",
+    "severity": "High",
+    "likelihood": "High",
+    "owner": "Emma Hartley",
+    "description": "Copilot, Agentforce, Now Assist and Cortex AI add-ons projected to add £2.1m to FY26/27 budget if uptake hits forecast.",
+    "mitigant": "Negotiate consumption caps and value-realisation clauses; pilot before enterprise rollout.",
+    "open_actions": 4,
+    "trend": "rising"
+  },
+  {
+    "id": "RISK-IT-05",
+    "title": "Certification compliance gap",
+    "severity": "Medium",
+    "likelihood": "Confirmed",
+    "owner": "Lauren Boyce",
+    "description": "5 vendor certifications expired or expiring within 90 days. SAP Cyber Essentials Plus already in breach.",
+    "mitigant": "Issue rectification notices; suspend new POs to non-compliant suppliers.",
+    "open_actions": 5,
+    "trend": "stable"
+  },
+  {
+    "id": "RISK-IT-06",
+    "title": "Pegasystems strategic uncertainty",
+    "severity": "Medium",
+    "likelihood": "Medium",
+    "owner": "Marcus Bell",
+    "description": "Activist investor (Elliott) ~10% stake in Pega. Take-private rumours; product roadmap volatility risk.",
+    "mitigant": "Activate alternative supplier diligence (Salesforce Service Cloud, ServiceNow CSM).",
+    "open_actions": 2,
+    "trend": "rising"
+  },
+  {
+    "id": "RISK-IT-07",
+    "title": "Snowflake consumption budget volatility",
+    "severity": "Medium",
+    "likelihood": "Confirmed",
+    "owner": "Priya Ramanathan",
+    "description": "Q1 2026 Snowflake spend +38% above budget driven by ML workload growth; no committed-use discount in place.",
+    "mitigant": "Move to capacity-based contract; implement query optimisation review board.",
+    "open_actions": 3,
+    "trend": "rising"
+  },
+  {
+    "id": "RISK-IT-08",
+    "title": "ESG Scope-3 reporting gaps",
+    "severity": "Medium",
+    "likelihood": "High",
+    "owner": "Sustainability (TBC)",
+    "description": "Oracle, Pega, Atlassian, Snowflake lack Scope 3 emissions reporting — gap vs. Centrica net-zero supply chain.",
+    "mitigant": "Embed Scope-3 attestation clause in next renewal cycle for each.",
+    "open_actions": 4,
+    "trend": "stable"
+  }
+]

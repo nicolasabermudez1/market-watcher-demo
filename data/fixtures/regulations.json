@@ -1,0 +1,56 @@
+[
+  {
+    "regulation": "EU AI Act",
+    "jurisdiction": "EU (extraterritorial for UK suppliers serving EU customers)",
+    "status": "Enforcement phase — Article 6/9 obligations live since Feb 2026",
+    "applicability": ["microsoft", "salesforce", "servicenow", "pega", "sap"],
+    "centrica_impact": "Must obtain conformity-assessment attestations from any GenAI vendor whose tooling touches EU customer data. Affects M365 Copilot, Agentforce, Now Assist.",
+    "deadline": "Continuous from 2026-02-02",
+    "owner": "Legal / Procurement"
+  },
+  {
+    "regulation": "UK AI Bill",
+    "jurisdiction": "United Kingdom",
+    "status": "Second reading complete (March 2026); enactment expected H2 2026",
+    "applicability": ["microsoft", "salesforce", "servicenow", "snowflake"],
+    "centrica_impact": "Pre-deployment risk assessments for any high-risk AI use-case. Recordkeeping and explainability obligations for customer-facing GenAI.",
+    "deadline": "Expected H2 2026",
+    "owner": "Legal / Data Protection"
+  },
+  {
+    "regulation": "UK GDPR + Data Use & Access Bill",
+    "jurisdiction": "United Kingdom",
+    "status": "In force; DUA Bill royal assent expected June 2026",
+    "applicability": ["microsoft", "salesforce", "workday", "sap", "snowflake"],
+    "centrica_impact": "Data residency clauses must be reviewed annually. Subject-access response SLAs tightening from 1 month to 21 days.",
+    "deadline": "Annual contract review",
+    "owner": "DPO"
+  },
+  {
+    "regulation": "NCSC Cloud Security Principles (revised 2026)",
+    "jurisdiction": "United Kingdom — CNI sectors",
+    "status": "In force; revised 14-principle set issued April 2026",
+    "applicability": ["microsoft", "oracle", "snowflake", "sap"],
+    "centrica_impact": "All cloud-hosted OT-adjacent workloads must demonstrate principle compliance evidence by Sep 2026.",
+    "deadline": "2026-09-30",
+    "owner": "CISO Office"
+  },
+  {
+    "regulation": "Ofgem RIIO-3 IT-supply-chain assurance",
+    "jurisdiction": "United Kingdom (energy regulator)",
+    "status": "Consultation closed; implementation 2027",
+    "applicability": ["microsoft", "sap", "oracle", "servicenow"],
+    "centrica_impact": "Critical IT vendors will need to demonstrate operational resilience, exit-readiness and tested DR — annual attestation to Ofgem.",
+    "deadline": "First attestation cycle: Apr 2027",
+    "owner": "IT Resilience"
+  },
+  {
+    "regulation": "Modern Slavery Act 2015 (updated reporting)",
+    "jurisdiction": "United Kingdom",
+    "status": "In force; expanded supply-chain disclosure from 2026",
+    "applicability": "all PSL vendors",
+    "centrica_impact": "Annual modern slavery statement required from every Tier-1 supplier; Atlassian and Pega currently flagged for review.",
+    "deadline": "Annual — next cycle Q3 2026",
+    "owner": "ESG / Compliance"
+  }
+]

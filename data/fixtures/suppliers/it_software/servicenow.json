@@ -1,0 +1,56 @@
+{
+  "supplier_id": "servicenow",
+  "name": "ServiceNow Inc.",
+  "category": "IT Software",
+  "subcategory": "IT Service Management",
+  "tier": "Preferred",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "products": ["ITSM", "ITOM", "HR Service Delivery", "Now Assist (GenAI)"],
+  "contract": {
+    "ref": "CNT-2022-0061",
+    "owner": "Lauren Boyce",
+    "start": "2022-10-01",
+    "expiry": "2026-09-30",
+    "value_gbp": 1450000,
+    "payment_terms": "Net 30",
+    "auto_renew": false
+  },
+  "financials": {
+    "revenue_usd_bn": 11.8,
+    "ebitda_margin_pct": 28.4,
+    "credit_rating": "A3",
+    "debt_to_equity": 0.3,
+    "dnb_risk_score": 1,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 195
+  },
+  "spend": {"ytd_gbp": 610000, "prior_year_gbp": 580000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "SNOW-ISO27001", "type": "ISO 27001", "expiry": "2027-04-30", "status": "Valid"},
+    {"cert_id": "SNOW-ISO9001", "type": "ISO 9001", "expiry": "2026-12-01", "status": "Valid"},
+    {"cert_id": "SNOW-SOCII", "type": "SOC 2 Type II", "expiry": "2026-09-15", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2030,
+    "re100_committed": true,
+    "living_wage_accredited": true,
+    "modern_slavery_statement": true,
+    "scope3_reporting": true,
+    "ecovadis_score": 81
+  },
+  "gartner": {
+    "quadrant": "Leaders",
+    "report": "Magic Quadrant for IT Service Management Tools 2026",
+    "completeness_of_vision": 4.7,
+    "ability_to_execute": 4.8
+  },
+  "analyst_quotes": [
+    "ServiceNow's Now Assist GenAI features deliver measurable agent productivity gains (+22% case throughput). — Gartner, Q1 2026 (mock)",
+    "Workflow consolidation onto Now Platform reduces tool sprawl — strong fit for utilities digital ops. — Forrester Wave, Q4 2025 (mock)"
+  ],
+  "risks": [
+    {"type": "Pricing", "description": "Now Assist GenAI licence (£60/agent/month) raises platform TCO by ~28%", "severity": "Medium"},
+    {"type": "Concentration", "description": "70% of internal IT workflows now on ServiceNow — high switching cost", "severity": "Medium"}
+  ]
+}

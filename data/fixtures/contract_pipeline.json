@@ -1,0 +1,10 @@
+[
+  {"supplier": "Oracle Corporation", "ref": "CNT-2020-0033", "expiry": "2025-07-31", "value_gbp": 3100000, "owner": "Sarah Baines", "status": "Overdue — rolling extensions", "priority": "Critical"},
+  {"supplier": "Pegasystems Inc.", "ref": "CNT-2022-0099", "expiry": "2025-11-30", "value_gbp": 780000, "owner": "Marcus Bell", "status": "Overdue — RFP launched", "priority": "Critical"},
+  {"supplier": "Atlassian Corporation", "ref": "CNT-2024-0042", "expiry": "2026-01-31", "value_gbp": 480000, "owner": "Tom Whitfield", "status": "Auto-renewed (review pending)", "priority": "Medium"},
+  {"supplier": "Snowflake Inc.", "ref": "CNT-2025-0011", "expiry": "2026-01-14", "value_gbp": 920000, "owner": "Priya Ramanathan", "status": "Renegotiation in progress", "priority": "High"},
+  {"supplier": "Workday Inc.", "ref": "CNT-2023-0078", "expiry": "2026-06-30", "value_gbp": 1900000, "owner": "Helena Cross", "status": "RFP scheduled (Q2 2026)", "priority": "High"},
+  {"supplier": "SAP SE", "ref": "CNT-2021-0007", "expiry": "2026-09-30", "value_gbp": 5600000, "owner": "David Okafor", "status": "Bundled with S/4HANA programme", "priority": "Critical"},
+  {"supplier": "ServiceNow Inc.", "ref": "CNT-2022-0061", "expiry": "2026-09-30", "value_gbp": 1450000, "owner": "Lauren Boyce", "status": "Pre-renewal benchmarking", "priority": "High"},
+  {"supplier": "Microsoft Corporation", "ref": "CNT-2023-0041", "expiry": "2026-12-31", "value_gbp": 8400000, "owner": "Emma Hartley", "status": "Strategic renewal (Copilot bundle)", "priority": "Critical"}
+]

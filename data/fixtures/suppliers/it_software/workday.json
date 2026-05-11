@@ -1,0 +1,56 @@
+{
+  "supplier_id": "workday",
+  "name": "Workday Inc.",
+  "category": "IT Software",
+  "subcategory": "Human Capital Management",
+  "tier": "Preferred",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "products": ["Workday HCM", "Workday Financial Management", "Workday Adaptive Planning"],
+  "contract": {
+    "ref": "CNT-2023-0078",
+    "owner": "Helena Cross",
+    "start": "2023-07-01",
+    "expiry": "2026-06-30",
+    "value_gbp": 1900000,
+    "payment_terms": "Net 30",
+    "auto_renew": false
+  },
+  "financials": {
+    "revenue_usd_bn": 8.9,
+    "ebitda_margin_pct": 22.4,
+    "credit_rating": "Baa2",
+    "debt_to_equity": 0.6,
+    "dnb_risk_score": 2,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 65
+  },
+  "spend": {"ytd_gbp": 845000, "prior_year_gbp": 790000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "WDAY-ISO27001", "type": "ISO 27001", "expiry": "2026-06-30", "status": "Expiring Soon"},
+    {"cert_id": "WDAY-ISO27018", "type": "ISO 27018", "expiry": "2026-05-25", "status": "Expiring Soon"},
+    {"cert_id": "WDAY-SOCII", "type": "SOC 2 Type II", "expiry": "2026-07-15", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2025,
+    "re100_committed": true,
+    "living_wage_accredited": true,
+    "modern_slavery_statement": true,
+    "scope3_reporting": true,
+    "ecovadis_score": 79
+  },
+  "gartner": {
+    "quadrant": "Leaders",
+    "report": "Magic Quadrant for Cloud HCM Suites 2026",
+    "completeness_of_vision": 4.5,
+    "ability_to_execute": 4.4
+  },
+  "analyst_quotes": [
+    "Workday's UK payroll module finally GA — closes the long-standing localisation gap. — Gartner, Q1 2026 (mock)",
+    "HCM-to-Finance unified data model is a clear differentiator vs. competitors. — IDC, Q4 2025 (mock)"
+  ],
+  "risks": [
+    {"type": "Certification", "description": "ISO 27001 and ISO 27018 both expiring within 60 days — concurrent renewal risk", "severity": "High"},
+    {"type": "Contract renewal", "description": "Renewal due Q2 2026 — incumbent advantage but RFP scheduled for benchmarking", "severity": "Medium"}
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "supplier_id": "sap",
+  "name": "SAP SE",
+  "category": "IT Software",
+  "subcategory": "ERP & Source-to-Pay",
+  "tier": "Strategic",
+  "region": "EMEA / Global",
+  "status": "Active PSL",
+  "products": ["SAP S/4HANA", "SAP Ariba", "SAP SuccessFactors", "SAP BTP"],
+  "contract": {
+    "ref": "CNT-2021-0007",
+    "owner": "David Okafor",
+    "start": "2021-04-01",
+    "expiry": "2026-09-30",
+    "value_gbp": 5600000,
+    "payment_terms": "Net 45",
+    "auto_renew": false
+  },
+  "financials": {
+    "revenue_usd_bn": 36.8,
+    "ebitda_margin_pct": 24.6,
+    "credit_rating": "A1",
+    "debt_to_equity": 0.3,
+    "dnb_risk_score": 1,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 260
+  },
+  "spend": {"ytd_gbp": 2400000, "prior_year_gbp": 2350000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "SAP-ISO27001", "type": "ISO 27001", "expiry": "2026-07-12", "status": "Expiring Soon"},
+    {"cert_id": "SAP-ISO9001", "type": "ISO 9001", "expiry": "2026-12-15", "status": "Valid"},
+    {"cert_id": "SAP-SOCII", "type": "SOC 2 Type II", "expiry": "2026-09-30", "status": "Valid"},
+    {"cert_id": "SAP-CYBERESS", "type": "Cyber Essentials Plus", "expiry": "2026-04-15", "status": "Expired"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2030,
+    "re100_committed": true,
+    "living_wage_accredited": true,
+    "modern_slavery_statement": true,
+    "scope3_reporting": true,
+    "ecovadis_score": 82
+  },
+  "gartner": {
+    "quadrant": "Leaders",
+    "report": "Magic Quadrant for Cloud ERP for Service-Centric Enterprises 2026",
+    "completeness_of_vision": 4.4,
+    "ability_to_execute": 4.5
+  },
+  "analyst_quotes": [
+    "SAP's S/4HANA Cloud migration roadmap is now mandatory — on-prem ECC support sunsets 2027. UK utilities should accelerate migration planning. — Gartner, Q4 2025 (mock)",
+    "Ariba spend management remains the leader for source-to-pay digitisation in regulated industries. — IDC MarketScape, Q1 2026 (mock)"
+  ],
+  "risks": [
+    {"type": "Migration", "description": "ECC end-of-support in 2027 forces S/4HANA migration — £4.2m programme estimate, 18-month timeline", "severity": "High"},
+    {"type": "Certification", "description": "Cyber Essentials Plus expired 26 days ago — supplier in breach of UK security baseline", "severity": "High"},
+    {"type": "Vendor lock-in", "description": "Tightly coupled with Ariba, JD Edwards integration; switching cost estimated >£8m", "severity": "Medium"}
+  ]
+}

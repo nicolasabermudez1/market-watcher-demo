@@ -1,0 +1,60 @@
+{
+  "category": "IT Software",
+  "last_updated": "2026-05-11",
+  "factors": [
+    {
+      "dimension": "Political",
+      "icon": "🏛️",
+      "headline": "UK-EU digital sovereignty regime tightens",
+      "detail": "Post-Brexit UK data adequacy decision under review by EU Commission; potential 2027 recertification risk. UK government Cloud-First mandate broadened to include AI workloads.",
+      "impact": "Medium",
+      "trend": "rising",
+      "sources": ["DSIT policy paper, March 2026 (mock)", "European Commission DPD review (mock)"]
+    },
+    {
+      "dimension": "Economic",
+      "icon": "💷",
+      "headline": "Vendor pricing inflation 7–12% YoY across the stack",
+      "detail": "Hyperscaler list prices up 9% (Microsoft), 12% (Oracle renewal terms); GenAI add-ons (Copilot, Now Assist, Agentforce) adding £200–400/user/year on top.",
+      "impact": "High",
+      "trend": "rising",
+      "sources": ["Gartner IT Key Metrics Data, Q1 2026 (mock)", "IDC Worldwide Software Forecast (mock)"]
+    },
+    {
+      "dimension": "Social",
+      "icon": "👥",
+      "headline": "Hybrid-work tooling expectations re-set permanently",
+      "detail": "Employee NPS for collaboration tooling now a board-tracked KPI. Living-wage attestation increasingly demanded by works councils — gap for Atlassian, Oracle, Pega.",
+      "impact": "Medium",
+      "trend": "stable",
+      "sources": ["CIPD HR Practices Survey 2026 (mock)", "Centrica Employee Engagement Q1 (internal)"]
+    },
+    {
+      "dimension": "Technological",
+      "icon": "🧠",
+      "headline": "GenAI agents shift from pilot to procurement-grade",
+      "detail": "Agentforce, Copilot, Now Assist and Cortex AI all GA. Procurement faces new contractual questions: per-conversation pricing, model lineage, output IP ownership, and data-leakage liability.",
+      "impact": "High",
+      "trend": "rising",
+      "sources": ["Gartner Hype Cycle for AI, Q1 2026 (mock)", "Forrester Tech Tide (mock)"]
+    },
+    {
+      "dimension": "Legal",
+      "icon": "⚖️",
+      "headline": "EU AI Act enforcement starts; UK AI Bill in second reading",
+      "detail": "EU AI Act Article 6/9 obligations now binding on high-risk AI suppliers serving EU customers. UK Online Safety regime extending to embedded GenAI in enterprise tooling.",
+      "impact": "High",
+      "trend": "rising",
+      "sources": ["EU AI Act enforcement guidance, Feb 2026 (mock)", "UK AI Bill Hansard reading, March 2026 (mock)"]
+    },
+    {
+      "dimension": "Environmental",
+      "icon": "🌱",
+      "headline": "Scope 3 software supply-chain reporting becomes mandatory",
+      "detail": "Centrica's net-zero commitment requires all Tier-1 IT suppliers to publish Scope 3 emissions. Gaps remain: Oracle, Pega, Snowflake (no Scope 3), Atlassian (partial).",
+      "impact": "Medium",
+      "trend": "rising",
+      "sources": ["Centrica Sustainability Report 2025 (mock)", "CDP Supply Chain disclosure (mock)"]
+    }
+  ]
+}

@@ -34,6 +34,7 @@ USE_BRAVE_FALLBACK: bool = _cfg["tools"]["use_brave_fallback"]
 BRAVE_API_KEY: str = os.environ.get("BRAVE_SEARCH_API_KEY", "")
 
 DEMO_CATEGORY: str = _cfg["demo"]["category"]
+DEMO_CATEGORY_SUBDIR: str = _cfg["demo"].get("category_subdir", "it_software")
 DEMO_SUPPLIERS: list[str] = _cfg["demo"]["suppliers"]
 SPEND_THRESHOLD: int = _cfg["demo"]["spend_threshold_gbp"]
 

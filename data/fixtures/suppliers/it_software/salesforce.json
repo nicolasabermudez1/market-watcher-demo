@@ -1,0 +1,57 @@
+{
+  "supplier_id": "salesforce",
+  "name": "Salesforce Inc.",
+  "category": "IT Software",
+  "subcategory": "Customer Relationship Management",
+  "tier": "Strategic",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "products": ["Sales Cloud", "Service Cloud", "Marketing Cloud", "Data Cloud", "Agentforce"],
+  "contract": {
+    "ref": "CNT-2024-0019",
+    "owner": "Rajesh Patel",
+    "start": "2024-04-01",
+    "expiry": "2027-03-31",
+    "value_gbp": 2200000,
+    "payment_terms": "Net 30",
+    "auto_renew": true
+  },
+  "financials": {
+    "revenue_usd_bn": 38.4,
+    "ebitda_margin_pct": 32.1,
+    "credit_rating": "A2",
+    "debt_to_equity": 0.4,
+    "dnb_risk_score": 2,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 310
+  },
+  "spend": {"ytd_gbp": 980000, "prior_year_gbp": 720000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "SFDC-ISO27001", "type": "ISO 27001", "expiry": "2026-11-30", "status": "Valid"},
+    {"cert_id": "SFDC-ISO27018", "type": "ISO 27018 (Cloud Privacy)", "expiry": "2026-09-15", "status": "Valid"},
+    {"cert_id": "SFDC-SOCII", "type": "SOC 2 Type II", "expiry": "2026-08-01", "status": "Valid"},
+    {"cert_id": "SFDC-CYBERESS", "type": "Cyber Essentials Plus", "expiry": "2026-07-25", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2030,
+    "re100_committed": true,
+    "living_wage_accredited": true,
+    "modern_slavery_statement": true,
+    "scope3_reporting": true,
+    "ecovadis_score": 86
+  },
+  "gartner": {
+    "quadrant": "Leaders",
+    "report": "Magic Quadrant for CRM Customer Engagement Center 2026",
+    "completeness_of_vision": 4.8,
+    "ability_to_execute": 4.6
+  },
+  "analyst_quotes": [
+    "Salesforce Agentforce sets the bar for autonomous agent integration in CRM workflows. — Gartner Hype Cycle, Q1 2026 (mock)",
+    "Energy and utility sector CRM uptake driven by smart-meter case-management requirements — Salesforce leads the segment. — IDC, Q4 2025 (mock)"
+  ],
+  "risks": [
+    {"type": "Pricing", "description": "Agentforce add-on (£2/conversation) cost trajectory unpredictable; budget exposure rising", "severity": "Medium"},
+    {"type": "Data residency", "description": "Marketing Cloud data still partially processed in US; UK-only residency requires separate hyperforce tenant", "severity": "Medium"}
+  ]
+}

@@ -1,16 +1,17 @@
 [models]
-primary = "gemini-2.5-flash"           # primary reasoning model (Google Gemini, via OpenAI-compat endpoint)
-fast = "gemini-2.5-flash-lite"         # fast/cheap lane — bulk parsing, classification
-embedding = "text-embedding-004"       # Gemini embedding model (unused while use_chroma=false)
+primary = "gemini-2.5-flash"
+fast = "gemini-2.5-flash-lite"
+embedding = "text-embedding-004"
 
 [tools]
-use_web_search = true                  # Brave Search provides live web (Gemini endpoint has no hosted search).
-use_chroma = false                     # disabled for Streamlit Cloud (sqlite version). Flip to true for local dev with full vector search.
-use_brave_fallback = true              # live web via Brave Search using BRAVE_SEARCH_API_KEY in .env / secrets
+use_web_search = false
+use_chroma = false
+use_brave_fallback = false
 
 [demo]
-category = "Cloud Infrastructure"
-suppliers = ["microsoft", "aws", "gcp"]
+category = "IT Software"
+category_subdir = "it_software"
+suppliers = ["microsoft", "sap", "oracle", "salesforce", "servicenow", "workday", "atlassian", "pega", "snowflake"]
 spend_threshold_gbp = 50000
 
 [paths]

@@ -10,13 +10,17 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 from market_watcher.config import MODEL_PRIMARY, FIXTURES_DIR
 from market_watcher.tools.mock_services import (
     mock_supplier_360,
+    mock_supplier_directory,
     mock_certification_register,
     mock_news_for_category,
+    mock_pestle,
+    mock_industry_risks,
+    mock_regulations,
+    mock_market_intel,
 )
 from market_watcher.tools.retrieval import semantic_retrieve
 from market_watcher.tools.document_gen import generate_weekly_digest
 from market_watcher.tools.tracer import save_trace
-from market_watcher.tools.web_search import web_search
 
 
 def _load_system_prompt() -> str:
@@ -30,10 +34,14 @@ def build_batch_agent() -> Agent:
         model=MODEL_PRIMARY,
         instructions=_load_system_prompt(),
         tools=[
-            web_search,
+            mock_supplier_directory,
             mock_supplier_360,
             mock_certification_register,
             mock_news_for_category,
+            mock_pestle,
+            mock_industry_risks,
+            mock_regulations,
+            mock_market_intel,
             semantic_retrieve,
             generate_weekly_digest,
         ],

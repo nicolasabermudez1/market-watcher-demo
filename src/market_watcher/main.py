@@ -59,8 +59,8 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     st.markdown("---")
-    st.markdown("**Category:** Cloud Infrastructure")
-    st.markdown("**Suppliers:** Microsoft · AWS · GCP")
+    st.markdown("**Category:** IT Software")
+    st.markdown("**Vendors:** Microsoft · SAP · Oracle · Salesforce · ServiceNow · Workday · Atlassian · Pega · Snowflake")
     st.markdown("**Mode:** Mock presentation demo")
     st.markdown("---")
     st.caption("Powered by Google Gemini 2.5 · openai-agents SDK")

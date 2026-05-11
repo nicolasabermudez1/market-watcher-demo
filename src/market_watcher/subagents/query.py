@@ -5,7 +5,9 @@ from agents import Agent, Runner
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from market_watcher.config import MODEL_PRIMARY
-from market_watcher.tools.mock_services import mock_supplier_360, mock_psl_search
+from market_watcher.tools.mock_services import (
+    mock_supplier_360, mock_psl_search, mock_supplier_directory, mock_market_intel
+)
 from market_watcher.tools.retrieval import semantic_retrieve
 from market_watcher.tools.tracer import save_trace
 
@@ -24,6 +26,8 @@ def build_query_agent() -> Agent:
         tools=[
             mock_psl_search,
             mock_supplier_360,
+            mock_supplier_directory,
+            mock_market_intel,
             semantic_retrieve,
         ],
     )

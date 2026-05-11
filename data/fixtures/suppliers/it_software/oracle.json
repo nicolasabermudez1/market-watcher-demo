@@ -1,0 +1,58 @@
+{
+  "supplier_id": "oracle",
+  "name": "Oracle Corporation",
+  "category": "IT Software",
+  "subcategory": "Database & ERP",
+  "tier": "Strategic",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "products": ["Oracle Database", "Oracle JD Edwards", "Oracle Fusion Cloud ERP", "Oracle Cloud Infrastructure (OCI)"],
+  "contract": {
+    "ref": "CNT-2020-0033",
+    "owner": "Sarah Baines",
+    "start": "2020-08-01",
+    "expiry": "2025-07-31",
+    "value_gbp": 3100000,
+    "payment_terms": "Net 60",
+    "auto_renew": false
+  },
+  "financials": {
+    "revenue_usd_bn": 53.4,
+    "ebitda_margin_pct": 42.0,
+    "credit_rating": "Baa2",
+    "debt_to_equity": 5.4,
+    "dnb_risk_score": 2,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 480
+  },
+  "spend": {"ytd_gbp": 1180000, "prior_year_gbp": 1640000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "ORCL-ISO27001", "type": "ISO 27001", "expiry": "2027-02-28", "status": "Valid"},
+    {"cert_id": "ORCL-ISO9001", "type": "ISO 9001", "expiry": "2025-11-01", "status": "Expired"},
+    {"cert_id": "ORCL-SOCII", "type": "SOC 2 Type II", "expiry": "2026-10-31", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2050,
+    "re100_committed": false,
+    "living_wage_accredited": false,
+    "modern_slavery_statement": true,
+    "scope3_reporting": false,
+    "ecovadis_score": 54
+  },
+  "gartner": {
+    "quadrant": "Challengers",
+    "report": "Magic Quadrant for Cloud Database Management Systems 2026",
+    "completeness_of_vision": 3.6,
+    "ability_to_execute": 4.2
+  },
+  "analyst_quotes": [
+    "Oracle's licensing audit aggressiveness remains the #1 procurement complaint among Fortune 2000 buyers. Plan for adversarial renewal cycles. — Gartner, Q1 2026 (mock)",
+    "JD Edwards customers face strategic uncertainty as Oracle prioritises Fusion Cloud roadmap. — Forrester, Q4 2025 (mock)"
+  ],
+  "risks": [
+    {"type": "Contract", "description": "Contract expired 9 months ago — running on rolling 30-day extensions; renewal terms increased 18%", "severity": "High"},
+    {"type": "Audit", "description": "Oracle initiated software licensing audit (Feb 2026) — potential £600k–£1.2m compliance exposure", "severity": "High"},
+    {"type": "ESG", "description": "No RE100 commitment, no Scope 3 reporting — gap vs Centrica net-zero supply chain requirement", "severity": "Medium"},
+    {"type": "Certification", "description": "ISO 9001 expired Nov 2025 — overdue >5 months", "severity": "High"}
+  ]
+}

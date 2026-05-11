@@ -1,0 +1,60 @@
+{
+  "supplier_id": "microsoft",
+  "name": "Microsoft Corporation",
+  "category": "IT Software",
+  "subcategory": "Productivity & Cloud Platform",
+  "tier": "Strategic",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "products": ["Microsoft 365", "Azure", "Power Platform", "Dynamics 365", "Copilot for Enterprise"],
+  "contract": {
+    "ref": "CNT-2023-0041",
+    "owner": "Emma Hartley",
+    "start": "2023-01-01",
+    "expiry": "2026-12-31",
+    "value_gbp": 8400000,
+    "payment_terms": "Net 30",
+    "auto_renew": true
+  },
+  "financials": {
+    "revenue_usd_bn": 245.1,
+    "ebitda_margin_pct": 47.8,
+    "credit_rating": "Aaa",
+    "debt_to_equity": 0.5,
+    "dnb_risk_score": 1,
+    "financial_year": 2025,
+    "market_cap_usd_bn": 3120
+  },
+  "spend": {"ytd_gbp": 3800000, "prior_year_gbp": 3500000, "currency": "GBP"},
+  "certifications": [
+    {"cert_id": "MSFT-ISO27001", "type": "ISO 27001", "expiry": "2026-08-14", "status": "Valid"},
+    {"cert_id": "MSFT-ISO9001", "type": "ISO 9001", "expiry": "2026-05-31", "status": "Expiring Soon"},
+    {"cert_id": "MSFT-ISO14001", "type": "ISO 14001", "expiry": "2026-01-09", "status": "Valid"},
+    {"cert_id": "MSFT-SOCII", "type": "SOC 2 Type II", "expiry": "2026-12-31", "status": "Valid"},
+    {"cert_id": "MSFT-CYBERESS", "type": "Cyber Essentials Plus", "expiry": "2026-11-20", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2030,
+    "re100_committed": true,
+    "living_wage_accredited": true,
+    "modern_slavery_statement": true,
+    "scope3_reporting": true,
+    "ecovadis_score": 78
+  },
+  "gartner": {
+    "quadrant": "Leaders",
+    "report": "Magic Quadrant for Cloud AI Developer Services 2026",
+    "completeness_of_vision": 4.6,
+    "ability_to_execute": 4.7
+  },
+  "analyst_quotes": [
+    "Microsoft remains the de facto enterprise productivity standard, with Copilot integration accelerating M365 modernisation. — Gartner, Q1 2026 (mock)",
+    "Azure UK South capacity constraints and pricing inflation are concerns for FTSE 100 customers entering renewal. — Forrester Wave, Q1 2026 (mock)"
+  ],
+  "risks": [
+    {"type": "Concentration", "description": "Microsoft accounts for 32% of total IT software spend across Centrica Group", "severity": "High"},
+    {"type": "Pricing", "description": "Per-user M365 list price rose 9% YoY; Copilot add-on at £24/user/month adds material cost pressure", "severity": "High"},
+    {"type": "Capacity", "description": "Azure UK South region capacity constraints reported across utilities sector (April 2026)", "severity": "Medium"},
+    {"type": "Certification", "description": "ISO 9001 renewal due in <60 days — supplier has not yet supplied renewal evidence", "severity": "Medium"}
+  ]
+}

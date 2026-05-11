@@ -1,0 +1,46 @@
+subcategory,supplier_id,supplier_name,month,spend_gbp
+Productivity & Cloud,microsoft,Microsoft Corporation,2025-12,310000
+Productivity & Cloud,microsoft,Microsoft Corporation,2026-01,318000
+Productivity & Cloud,microsoft,Microsoft Corporation,2026-02,322000
+Productivity & Cloud,microsoft,Microsoft Corporation,2026-03,330000
+Productivity & Cloud,microsoft,Microsoft Corporation,2026-04,340000
+ERP & S2P,sap,SAP SE,2025-12,195000
+ERP & S2P,sap,SAP SE,2026-01,198000
+ERP & S2P,sap,SAP SE,2026-02,200000
+ERP & S2P,sap,SAP SE,2026-03,201000
+ERP & S2P,sap,SAP SE,2026-04,206000
+Database & ERP,oracle,Oracle Corporation,2025-12,98000
+Database & ERP,oracle,Oracle Corporation,2026-01,99000
+Database & ERP,oracle,Oracle Corporation,2026-02,100000
+Database & ERP,oracle,Oracle Corporation,2026-03,98000
+Database & ERP,oracle,Oracle Corporation,2026-04,96000
+CRM,salesforce,Salesforce Inc.,2025-12,78000
+CRM,salesforce,Salesforce Inc.,2026-01,80000
+CRM,salesforce,Salesforce Inc.,2026-02,82000
+CRM,salesforce,Salesforce Inc.,2026-03,84000
+CRM,salesforce,Salesforce Inc.,2026-04,85000
+ITSM,servicenow,ServiceNow Inc.,2025-12,48000
+ITSM,servicenow,ServiceNow Inc.,2026-01,49000
+ITSM,servicenow,ServiceNow Inc.,2026-02,50000
+ITSM,servicenow,ServiceNow Inc.,2026-03,51000
+ITSM,servicenow,ServiceNow Inc.,2026-04,52000
+HCM,workday,Workday Inc.,2025-12,68000
+HCM,workday,Workday Inc.,2026-01,69000
+HCM,workday,Workday Inc.,2026-02,70000
+HCM,workday,Workday Inc.,2026-03,71000
+HCM,workday,Workday Inc.,2026-04,72000
+DevOps,atlassian,Atlassian Corporation,2025-12,17000
+DevOps,atlassian,Atlassian Corporation,2026-01,18000
+DevOps,atlassian,Atlassian Corporation,2026-02,18500
+DevOps,atlassian,Atlassian Corporation,2026-03,19000
+DevOps,atlassian,Atlassian Corporation,2026-04,19500
+Customer Decisioning,pega,Pegasystems Inc.,2025-12,28000
+Customer Decisioning,pega,Pegasystems Inc.,2026-01,28000
+Customer Decisioning,pega,Pegasystems Inc.,2026-02,27000
+Customer Decisioning,pega,Pegasystems Inc.,2026-03,26000
+Customer Decisioning,pega,Pegasystems Inc.,2026-04,25000
+Data Platform,snowflake,Snowflake Inc.,2025-12,42000
+Data Platform,snowflake,Snowflake Inc.,2026-01,68000
+Data Platform,snowflake,Snowflake Inc.,2026-02,82000
+Data Platform,snowflake,Snowflake Inc.,2026-03,108000
+Data Platform,snowflake,Snowflake Inc.,2026-04,120000
