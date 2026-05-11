@@ -1,0 +1,3 @@
+# apt packages to install on Streamlit Cloud (Debian).
+# Leave empty for now — chromadb is disabled in config.toml so no extra OS deps needed.
+# If chromadb is re-enabled and sqlite errors appear, add: libsqlite3-dev

@@ -1,0 +1,49 @@
+{
+  "supplier_id": "gcp",
+  "name": "Google Cloud Platform (GCP)",
+  "category": "Cloud Infrastructure",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "contract": {
+    "ref": "CNT-2024-0012",
+    "owner": "Sarah Baines",
+    "start": "2024-01-15",
+    "expiry": "2027-01-14",
+    "value_gbp": 1100000,
+    "payment_terms": "Net 30"
+  },
+  "financials": {
+    "revenue_usd_bn": 43.2,
+    "ebitda_margin_pct": 17.4,
+    "credit_rating": "Aa2",
+    "debt_to_equity": 0.3,
+    "dnb_risk_score": 2,
+    "financial_year": 2024
+  },
+  "spend": {
+    "ytd_gbp": 340000,
+    "prior_year_gbp": 280000,
+    "currency": "GBP"
+  },
+  "certifications": [
+    {"cert_id": "GCP-ISO27001-2026", "type": "ISO 27001", "issued": "2023-07-01", "expiry": "2026-06-30", "status": "Valid"},
+    {"cert_id": "GCP-ISO9001", "type": "ISO 9001", "issued": "2023-09-01", "expiry": "2026-08-31", "status": "Valid"},
+    {"cert_id": "GCP-ISO14001", "type": "ISO 14001", "issued": "2022-12-01", "expiry": "2025-07-31", "status": "Expiring Soon"},
+    {"cert_id": "GCP-SOCII", "type": "SOC 2 Type II", "issued": "2024-06-01", "expiry": "2025-05-31", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2030,
+    "re100_committed": true,
+    "living_wage_accredited": true,
+    "modern_slavery_statement": true,
+    "scope3_reporting": true
+  },
+  "risks": [
+    {"type": "Market Position", "description": "Third-largest cloud provider — potential pricing pressure if spend grows beyond current tier", "severity": "Low"},
+    {"type": "Certification", "description": "ISO 14001 expiring July 2025 — renewal documentation not yet received", "severity": "Medium"}
+  ],
+  "news_seed": [
+    "Google Cloud announces Duet AI integration for enterprise workloads",
+    "GCP achieves carbon-free energy on 90% of operations in UK regions"
+  ]
+}

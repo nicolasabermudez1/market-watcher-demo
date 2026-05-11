@@ -1,0 +1,17 @@
+# Streamlit Cloud / server configuration
+# NOTE: This is a Streamlit-only file. The project's own config.toml at repo root is separate.
+
+[server]
+headless = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# Centrica brand palette
+primaryColor = "#0F2067"          # navy
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#DECFFF"  # pale lavender
+textColor = "#0F2067"
+font = "sans serif"

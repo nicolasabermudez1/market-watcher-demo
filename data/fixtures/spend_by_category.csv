@@ -1,0 +1,19 @@
+supplier_id,supplier_name,month,spend_gbp,category
+microsoft,Microsoft Corporation,2025-05,153000,Cloud Infrastructure
+microsoft,Microsoft Corporation,2025-06,158000,Cloud Infrastructure
+microsoft,Microsoft Corporation,2025-07,161000,Cloud Infrastructure
+microsoft,Microsoft Corporation,2025-08,154000,Cloud Infrastructure
+microsoft,Microsoft Corporation,2025-09,162000,Cloud Infrastructure
+microsoft,Microsoft Corporation,2025-10,149000,Cloud Infrastructure
+aws,Amazon Web Services,2025-05,74000,Cloud Infrastructure
+aws,Amazon Web Services,2025-06,78000,Cloud Infrastructure
+aws,Amazon Web Services,2025-07,80000,Cloud Infrastructure
+aws,Amazon Web Services,2025-08,76000,Cloud Infrastructure
+aws,Amazon Web Services,2025-09,79000,Cloud Infrastructure
+aws,Amazon Web Services,2025-10,75000,Cloud Infrastructure
+gcp,Google Cloud Platform,2025-05,27000,Cloud Infrastructure
+gcp,Google Cloud Platform,2025-06,29000,Cloud Infrastructure
+gcp,Google Cloud Platform,2025-07,31000,Cloud Infrastructure
+gcp,Google Cloud Platform,2025-08,28000,Cloud Infrastructure
+gcp,Google Cloud Platform,2025-09,30000,Cloud Infrastructure
+gcp,Google Cloud Platform,2025-10,32000,Cloud Infrastructure

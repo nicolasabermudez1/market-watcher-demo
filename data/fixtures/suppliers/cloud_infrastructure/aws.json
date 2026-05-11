@@ -1,0 +1,50 @@
+{
+  "supplier_id": "aws",
+  "name": "Amazon Web Services (AWS)",
+  "category": "Cloud Infrastructure",
+  "region": "North America / Global",
+  "status": "Active PSL",
+  "contract": {
+    "ref": "CNT-2022-0089",
+    "owner": "David Okafor",
+    "start": "2022-07-01",
+    "expiry": "2025-06-30",
+    "value_gbp": 2800000,
+    "payment_terms": "Net 45"
+  },
+  "financials": {
+    "revenue_usd_bn": 107.6,
+    "ebitda_margin_pct": 38.7,
+    "credit_rating": "Aa2",
+    "debt_to_equity": 0.9,
+    "dnb_risk_score": 2,
+    "financial_year": 2024
+  },
+  "spend": {
+    "ytd_gbp": 920000,
+    "prior_year_gbp": 1050000,
+    "currency": "GBP"
+  },
+  "certifications": [
+    {"cert_id": "AWS-ISO27001", "type": "ISO 27001", "issued": "2023-08-20", "expiry": "2026-08-19", "status": "Valid"},
+    {"cert_id": "AWS-ISO9001", "type": "ISO 9001", "issued": "2021-11-15", "expiry": "2024-11-14", "status": "Expired — renewal pending"},
+    {"cert_id": "AWS-SOCII", "type": "SOC 2 Type II", "issued": "2024-04-01", "expiry": "2025-03-31", "status": "Valid"},
+    {"cert_id": "AWS-PCIDSS", "type": "PCI DSS Level 1", "issued": "2024-02-01", "expiry": "2025-01-31", "status": "Valid"}
+  ],
+  "esg": {
+    "carbon_neutral_target": 2040,
+    "re100_committed": true,
+    "living_wage_accredited": false,
+    "modern_slavery_statement": true,
+    "scope3_reporting": false
+  },
+  "risks": [
+    {"type": "Contract", "description": "Contract expired June 2025 — renewal negotiations in progress; rates at risk", "severity": "High"},
+    {"type": "ESG", "description": "No Scope 3 emissions reporting; gap vs Centrica net-zero supply-chain commitments", "severity": "Medium"},
+    {"type": "Certification", "description": "ISO 9001 expired November 2024 — no renewal certificate on file", "severity": "High"}
+  ],
+  "news_seed": [
+    "AWS announces new UK West (Cardiff) region opening H2 2026",
+    "Amazon commits to 100% renewable energy for AWS by 2025"
+  ]
+}
