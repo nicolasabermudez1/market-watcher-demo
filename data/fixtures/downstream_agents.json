@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ariba",
+    "name": "SAP Ariba",
+    "icon": "📦",
+    "type": "System of Record",
+    "status": "Live",
+    "receives": "Supplier master updates · contract metadata · spend records",
+    "scope": "All vendor data, contract renewals, spend deltas",
+    "color": "#0F2067"
+  },
+  {
+    "id": "negotiation_buddy",
+    "name": "Negotiation Buddy (Pactum)",
+    "icon": "🤝",
+    "type": "Agent",
+    "status": "Live",
+    "receives": "High-value renewal flags · price benchmark inputs · BATNA prompts",
+    "scope": "Microsoft, SAP, Oracle, Workday renewals (>£1m)",
+    "color": "#9B2BF7"
+  },
+  {
+    "id": "rfx_agent",
+    "name": "RFx Agent",
+    "icon": "📋",
+    "type": "Agent",
+    "status": "Live",
+    "receives": "RFP-triggers from contract pipeline · scoring criteria · shortlist seed",
+    "scope": "Oracle replacement RFP · Workday benchmark RFP · Pega alternative scout",
+    "color": "#B999F6"
+  },
+  {
+    "id": "contracting_agent",
+    "name": "Contracting Agent (DocuSign CLM)",
+    "icon": "✍️",
+    "type": "Agent",
+    "status": "Live",
+    "receives": "Risk-driven clauses · Scope 3 attestation language · cert renewal triggers",
+    "scope": "All Tier-1 renewals in next 12 months",
+    "color": "#85DB9C"
+  },
+  {
+    "id": "tprm_abi",
+    "name": "TPRM (Abi)",
+    "icon": "🛡️",
+    "type": "Agent",
+    "status": "Live",
+    "receives": "Risk register updates · ESG flags · ISO/Cyber Essentials lapses",
+    "scope": "All PSL vendors",
+    "color": "#0F2067"
+  },
+  {
+    "id": "spend_analytics",
+    "name": "Spend Analytics (Power BI)",
+    "icon": "📊",
+    "type": "Dashboard",
+    "status": "Live",
+    "receives": "Monthly spend deltas · sub-category breakdown · variance alerts",
+    "scope": "Full IT Software category cube",
+    "color": "#9B2BF7"
+  },
+  {
+    "id": "cat_plan_builder",
+    "name": "Cat-Plan Builder",
+    "icon": "📘",
+    "type": "Agent",
+    "status": "Beta",
+    "receives": "PESTLE updates · risk register · regulatory landscape · sourcing strategy",
+    "scope": "Category strategy doc — IT Software v3.2",
+    "color": "#B999F6"
+  },
+  {
+    "id": "outlook_notify",
+    "name": "Owner Notifications (Outlook)",
+    "icon": "📧",
+    "type": "System",
+    "status": "Live",
+    "receives": "Per-risk notifications to contract owners · cert chase emails (English/Spanish)",
+    "scope": "8 contract owners · 5 cert holders",
+    "color": "#85DB9C"
+  },
+  {
+    "id": "teams_channel",
+    "name": "MS Teams — Procurement Channel",
+    "icon": "💬",
+    "type": "Channel",
+    "status": "Live",
+    "receives": "Executive summary · high-priority risk card · weekly digest link",
+    "scope": "Procurement Leadership Team",
+    "color": "#0F2067"
+  },
+  {
+    "id": "ofgem_evidence",
+    "name": "OFGEM RIIO-3 Evidence Locker",
+    "icon": "📁",
+    "type": "Compliance",
+    "status": "Coming Soon",
+    "receives": "IT supply-chain resilience attestations · cert evidence · DR test results",
+    "scope": "Critical IT vendors (4)",
+    "color": "#9B2BF7"
+  }
+]

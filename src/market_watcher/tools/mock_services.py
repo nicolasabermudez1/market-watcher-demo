@@ -92,6 +92,10 @@ def get_market_intel(limit: int = 10) -> list[dict]:
     return items[:limit]
 
 
+def get_downstream_agents() -> list[dict]:
+    return _load_fixture("downstream_agents.json")
+
+
 def get_psl_search(category: str, criteria_weights: dict) -> list[dict]:
     """Rank PSL suppliers by criteria_weights. Generic scoring derived from supplier fixtures."""
     suppliers_raw = []

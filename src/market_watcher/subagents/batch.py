@@ -19,7 +19,6 @@ from market_watcher.tools.mock_services import (
     mock_market_intel,
 )
 from market_watcher.tools.retrieval import semantic_retrieve
-from market_watcher.tools.document_gen import generate_weekly_digest
 from market_watcher.tools.tracer import save_trace
 
 
@@ -43,7 +42,6 @@ def build_batch_agent() -> Agent:
             mock_regulations,
             mock_market_intel,
             semantic_retrieve,
-            generate_weekly_digest,
         ],
     )
 
@@ -57,12 +55,15 @@ def run_monday_scan(category: str = "Cloud Infrastructure") -> dict:
     prompt = (
         f"Run the Monday-morning Market Watcher intelligence scan for the '{category}' category. "
         f"Today is {run_date}. "
-        f"Search for recent news about Microsoft Azure, AWS, and Google Cloud Platform related to "
-        f"procurement risk, certifications, ESG, market changes, and UK regulatory updates. "
-        f"Retrieve 360 profiles for all three suppliers. Check the certification register. "
-        f"Compile risks and generate the weekly digest Word document. "
-        f"Return your result as a JSON object with keys: digest_path, risk_count, high_risks, "
-        f"news_sources, cert_alerts, summary."
+        f"Pull supplier directory, market intel, industry risks, regulations, and certification register. "
+        f"Synthesise findings into a structured JSON object with keys: "
+        f"  - summary (2-3 sentence executive summary), "
+        f"  - risk_count (int), "
+        f"  - high_risks (list of short risk descriptions), "
+        f"  - cert_alerts (list of '<Supplier> — <CertType> (expires <date>)' strings), "
+        f"  - news_sources (list of source names cited), "
+        f"  - top_actions (list of 3-5 concrete next-step actions for the head of procurement). "
+        f"Return JSON only. Do not generate any documents."
     )
 
     tool_calls_log = []
@@ -80,8 +81,8 @@ def run_monday_scan(category: str = "Cloud Infrastructure") -> dict:
                 raw_output = raw_output.split("```")[1].split("```")[0].strip()
             parsed = json.loads(raw_output)
         except Exception:
-            parsed = {"summary": raw_output, "digest_path": "", "risk_count": 0,
-                      "high_risks": [], "news_sources": [], "cert_alerts": []}
+            parsed = {"summary": raw_output, "risk_count": 0,
+                      "high_risks": [], "news_sources": [], "cert_alerts": [], "top_actions": []}
 
         # Collect tool calls from run context
         for msg in result.new_messages:
