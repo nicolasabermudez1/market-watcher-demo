@@ -18,7 +18,7 @@ Return a single JSON object (no Markdown, no document generation) with these key
 - `risk_count`: integer (total risks identified across the category).
 - `high_risks`: list of short risk descriptions (≤ 25 words each).
 - `cert_alerts`: list of "<Supplier> — <CertType> (expires <date>)" strings.
-- `news_sources`: list of source names cited (e.g. "Gartner", "Forrester", "FT").
+- `news_sources`: list of source names cited. You MUST include at least one item each from "Dun & Bradstreet", "Bloomberg Intelligence" and "Achilles", plus 2-3 others (Gartner, Forrester, FT, Reuters, internal Centrica).
 - `top_actions`: list of 3-5 concrete next-step actions for the procurement leadership.
 
 ## Rules

@@ -72,6 +72,9 @@ def _render_findings():
     st.markdown("---")
     st.subheader("📈 This Week's Findings")
 
+    # Sources-scanned badge row — visible proof of what the agent touched
+    _render_sources_badges()
+
     # KPI strip
     risks = get_industry_risks()
     certs = get_certification_register()
@@ -174,6 +177,38 @@ def _render_findings():
 
     if result.get("news_sources"):
         st.caption(f"Sources cited by agent: {' · '.join(result['news_sources'][:8])}")
+
+
+def _render_sources_badges():
+    """Show the data sources the agent pulled from this run."""
+    sources = [
+        ("💼", "Dun & Bradstreet", "Risk scores · PayDex · family tree", "#0F2067"),
+        ("📈", "Bloomberg Intelligence", "Market cap · M&A · earnings", "#9B2BF7"),
+        ("🏷️", "Achilles", "UVDB · JOSCAR · audit evidence", "#B999F6"),
+        ("📡", "Gartner", "Magic Quadrant · Hype Cycle", "#0F2067"),
+        ("📡", "Forrester", "Wave reports", "#9B2BF7"),
+        ("📊", "SAP Ariba", "Spend cube · contracts", "#85DB9C"),
+        ("🧾", "Ecovadis", "ESG scorecards", "#85DB9C"),
+        ("🌐", "FT · Reuters · Bloomberg News", "Real-time news", "#B999F6"),
+    ]
+    st.markdown(
+        "<div style='font-size:0.78rem;color:#666;margin-bottom:6px;'>"
+        "🛰️ <b>Data sources scanned by the agent this run:</b>"
+        "</div>",
+        unsafe_allow_html=True,
+    )
+    badges_html = "<div style='display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;'>"
+    for icon, name, scope, color in sources:
+        badges_html += (
+            f"<div style='border:1px solid {color};border-left:4px solid {color};"
+            f"background:#fafafa;padding:6px 10px;border-radius:6px;font-size:0.78rem;"
+            f"min-width:160px;'>"
+            f"<div style='color:#0F2067;font-weight:bold;'>{icon} {name}</div>"
+            f"<div style='color:#666;font-size:0.7rem;margin-top:2px;'>{scope}</div>"
+            f"</div>"
+        )
+    badges_html += "</div>"
+    st.markdown(badges_html, unsafe_allow_html=True)
 
 
 # ── Distribute panel ────────────────────────────────────────────────────────
