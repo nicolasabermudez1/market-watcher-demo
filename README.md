@@ -1,6 +1,6 @@
-# Market Watcher — Centrica Procurement Intelligence Demo
+# Category Watcher — Centrica Procurement Intelligence Demo
 
-A working demo of the Market Watcher agent for Centrica Procurement, showcasing
+A working demo of the Category Watcher agent for Centrica Procurement, showcasing
 AI-powered supplier monitoring, certification management, and self-serve buying.
 
 **Category in scope:** Cloud Infrastructure (Microsoft Azure · AWS · GCP)
@@ -184,4 +184,4 @@ market-watcher-demo/
 
 ---
 
-*Centrica Procurement Transformation · Workstream 1 — Processes · Market Watcher Demo*
+*Centrica Procurement Transformation · Workstream 1 — Processes · Category Watcher Demo*

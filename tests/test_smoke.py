@@ -177,7 +177,7 @@ def test_batch_agent_builds():
     os.environ.setdefault("GEMINI_API_KEY", "dummy-for-import-test")
     from market_watcher.subagents.batch import build_batch_agent
     ba = build_batch_agent()
-    assert ba.name == "MarketWatcherBatchAgent"
+    assert ba.name == "CategoryWatcherBatchAgent"
     assert len(ba.tools) >= 8
 
 

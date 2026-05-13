@@ -1,6 +1,6 @@
 """Agent activity theatre — streams realistic 'agent is working' messages to Streamlit.
 
-Pure visual element: makes it visible to the user that the Market Watcher agent is
+Pure visual element: makes it visible to the user that the Category Watcher agent is
 querying Gartner, pulling Ariba spend data, scanning supplier news, etc. The actual
 data is loaded from fixtures, but the streamed messages let the user *see* the agent
 doing its job rather than staring at a blank spinner.
@@ -16,7 +16,7 @@ import streamlit as st
 # Activity messages tagged with a category emoji + short delay (seconds)
 ACTIVITY_LIBRARY: dict[str, list[tuple[str, str]]] = {
     "scan": [
-        ("🔍", "Spawning Market Watcher agent (Gemini 2.5)..."),
+        ("🔍", "Spawning Category Watcher agent (Gemini 2.5)..."),
         ("📡", "Querying Gartner Magic Quadrant — Enterprise Application Software 2026..."),
         ("📡", "Querying Gartner Hype Cycle — Generative AI for Enterprise..."),
         ("📡", "Pulling Forrester Wave reports (Source-to-Pay, ITSM, CRM)..."),
@@ -93,7 +93,7 @@ def stream(track: str = "scan", message_delay: float = 0.35, slot=None) -> None:
 def stream_with_progress(track: str = "scan", message_delay: float = 0.35) -> None:
     """Same as stream() but with a progress bar alongside."""
     activities = ACTIVITY_LIBRARY.get(track, ACTIVITY_LIBRARY["scan"])
-    progress = st.progress(0, text="Market Watcher agent starting up...")
+    progress = st.progress(0, text="Category Watcher agent starting up...")
     log_slot = st.empty()
     lines: list[str] = []
 

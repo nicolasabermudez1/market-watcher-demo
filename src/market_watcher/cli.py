@@ -13,7 +13,7 @@ from rich import print as rprint
 
 load_dotenv()
 
-app = typer.Typer(help="Market Watcher CLI — Centrica Procurement Intelligence Agent")
+app = typer.Typer(help="Category Watcher CLI — Centrica Procurement Intelligence Agent")
 console = Console()
 
 
@@ -27,7 +27,7 @@ def _check_api_key():
 def scan(category: str = typer.Option("Cloud Infrastructure", help="Category to scan")):
     """Run the Monday-morning intelligence scan."""
     _check_api_key()
-    console.print(f"\n[bold #0F2067]Market Watcher[/bold #0F2067] — Running Monday scan for [bold]{category}[/bold]\n")
+    console.print(f"\n[bold #0F2067]Category Watcher[/bold #0F2067] — Running Monday scan for [bold]{category}[/bold]\n")
 
     from market_watcher.subagents.batch import run_monday_scan
     result = run_monday_scan(category)

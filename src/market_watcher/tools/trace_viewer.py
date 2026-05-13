@@ -23,7 +23,7 @@ def main(path: str | None = None) -> None:
         console.print("[bold red]No trace files found in data/runs/[/bold red]")
         return
 
-    console.print(f"\n[bold #0F2067]Market Watcher — Run Trace[/bold #0F2067]")
+    console.print(f"\n[bold #0F2067]Category Watcher — Run Trace[/bold #0F2067]")
     console.print(f"Agent: [bold]{trace['agent']}[/bold]  ·  Run ID: {trace['run_id']}  ·  {trace['timestamp']}\n")
 
     if trace.get("tool_calls"):

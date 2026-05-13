@@ -1,4 +1,4 @@
-"""Market Watcher — Streamlit entry point.
+"""Category Watcher — Streamlit entry point.
 Run: uv run streamlit run src/market_watcher/main.py
 """
 
@@ -8,7 +8,7 @@ import streamlit as st
 
 # Page config must be first Streamlit call
 st.set_page_config(
-    page_title="Market Watcher — Centrica Procurement",
+    page_title="Category Watcher — Centrica Procurement",
     page_icon="🔍",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -47,7 +47,7 @@ with st.sidebar:
     st.markdown(
         """<div style="text-align:center;padding:1rem 0;">
             <div style="font-family:Arial,sans-serif;font-size:1.4rem;font-weight:bold;color:#85DB9C;">
-                Market Watcher
+                Category Watcher
             </div>
             <div style="font-size:0.75rem;color:#DECFFF;margin-top:4px;">
                 Centrica Procurement Intelligence
@@ -76,7 +76,7 @@ cat_tabs = st.tabs(tab_labels)
 for tab_obj, category in zip(cat_tabs, categories_meta):
     with tab_obj:
         if category["id"] == "it_software":
-            # Full Market Watcher stack — 3 sub-tabs
+            # Full Category Watcher stack — 3 sub-tabs
             sub_tabs = st.tabs([
                 "📋  Monday Digest",
                 "📊  Category Dashboard",

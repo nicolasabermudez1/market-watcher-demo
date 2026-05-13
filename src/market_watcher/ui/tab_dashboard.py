@@ -178,7 +178,7 @@ def _render_pestle():
 def _render_risk_register():
     risks = get_industry_risks()
     st.subheader("⚠️ Industry Risk Register")
-    st.caption("Curated by Market Watcher agent · refreshed Monday 06:00 UTC")
+    st.caption("Curated by Category Watcher agent · refreshed Monday 06:00 UTC")
 
     sev_counts = {"High": 0, "Medium": 0, "Low": 0}
     for r in risks:
@@ -297,7 +297,7 @@ def _render_certifications(certs: list[dict]):
 
     if "last_chase_email" in st.session_state:
         st.text_area("Draft (review before sending)", st.session_state["last_chase_email"], height=350)
-        st.info("Drafted by Market Watcher agent — for internal review only.")
+        st.info("Drafted by Category Watcher agent — for internal review only.")
 
 
 def _render_market_intel():

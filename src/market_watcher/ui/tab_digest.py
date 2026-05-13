@@ -22,11 +22,11 @@ SEV_COLORS = {"High": "#9B2BF7", "Medium": "#B999F6", "Low": "#85DB9C"}
 def render():
     st.markdown(header_html(
         "Monday Morning Intelligence Scan",
-        f"Market Watcher · {DEMO_CATEGORY} · {datetime.now().strftime('%A %d %B %Y')}"
+        f"Category Watcher · {DEMO_CATEGORY} · {datetime.now().strftime('%A %d %B %Y')}"
     ), unsafe_allow_html=True)
 
     st.markdown(
-        "The Market Watcher agent pulls vendor 360 profiles, Gartner/Forrester signals, "
+        "The Category Watcher agent pulls vendor 360 profiles, Gartner/Forrester signals, "
         "Ariba spend, the certification register, regulatory landscape, and PESTLE intelligence — "
         "then synthesises a category-manager briefing. Findings can be routed to downstream agents (Ariba, Pactum, RFx, Contracting, TPRM)."
     )

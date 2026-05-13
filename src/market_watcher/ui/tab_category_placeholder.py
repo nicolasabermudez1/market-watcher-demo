@@ -1,4 +1,4 @@
-"""Placeholder view for categories that have not been fully onboarded onto Market Watcher yet.
+"""Placeholder view for categories that have not been fully onboarded onto Category Watcher yet.
 
 Renders a credible 'category card' with metadata + 'Activate this category' CTA.
 The IT Software category uses the full Digest/Dashboard/Strategy stack instead.
@@ -67,8 +67,8 @@ def render(category: dict):
 
     st.markdown("---")
 
-    # What activating Market Watcher would unlock
-    st.markdown("#### 🚀 What activating Market Watcher would unlock for this category")
+    # What activating Category Watcher would unlock
+    st.markdown("#### 🚀 What activating Category Watcher would unlock for this category")
     rows = [
         ("📋 Monday Morning Intelligence Digest", "Weekly agent-curated briefing — risks, renewals, certs, market signals."),
         ("📊 Live Category Manager Dashboard", f"PESTLE, risk register, regulations, spend cube, contract pipeline, vendor 360 for all {category['vendor_count']} vendors."),
@@ -90,10 +90,10 @@ def render(category: dict):
     # CTA
     disabled = status == "Coming Soon"
     cta_label = {
-        "Live": "✅ Market Watcher is live for this category",
-        "Pilot": "🚀 Activate Market Watcher for this category",
+        "Live": "✅ Category Watcher is live for this category",
+        "Pilot": "🚀 Activate Category Watcher for this category",
         "Coming Soon": "⏳ Coming soon — backlog item",
-    }.get(status, "Activate Market Watcher")
+    }.get(status, "Activate Category Watcher")
 
     if st.button(cta_label, use_container_width=True, type="primary",
                   disabled=(disabled or status == "Live"),
@@ -106,7 +106,7 @@ def _simulate_activation(category: dict):
     log_slot = st.empty()
     lines = []
     steps = [
-        f"🔧 Provisioning Market Watcher workspace for **{category['name']}**...",
+        f"🔧 Provisioning Category Watcher workspace for **{category['name']}**...",
         "📡 Connecting Gemini agent to category data sources...",
         f"💼 Pulling D&B Risk Scores for {category['vendor_count']} vendors...",
         f"🇬🇧 Cross-referencing Companies House registry for UK-incorporated vendors...",
@@ -128,4 +128,4 @@ def _simulate_activation(category: dict):
         progress.progress((i + 1) / len(steps), text=step.replace("**", ""))
         time.sleep(0.45)
     progress.empty()
-    st.success(f"✨ Market Watcher activated for {category['name']} — Category Manager has been notified.")
+    st.success(f"✨ Category Watcher activated for {category['name']} — Category Manager has been notified.")

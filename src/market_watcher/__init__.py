@@ -1,4 +1,4 @@
-"""Market Watcher — Centrica Procurement Intelligence Demo.
+"""Category Watcher — Centrica Procurement Intelligence Demo.
 
 Importing this package configures the openai-agents SDK to use Gemini
 via its OpenAI-compatibility endpoint.

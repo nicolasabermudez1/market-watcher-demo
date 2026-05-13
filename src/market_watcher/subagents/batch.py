@@ -29,7 +29,7 @@ def _load_system_prompt() -> str:
 
 def build_batch_agent() -> Agent:
     return Agent(
-        name="MarketWatcherBatchAgent",
+        name="CategoryWatcherBatchAgent",
         model=MODEL_PRIMARY,
         instructions=_load_system_prompt(),
         tools=[
@@ -53,7 +53,7 @@ def run_monday_scan(category: str = "Cloud Infrastructure") -> dict:
     run_date = datetime.now().strftime("%Y-%m-%d")
 
     prompt = (
-        f"Run the Monday-morning Market Watcher intelligence scan for the '{category}' category. "
+        f"Run the Monday-morning Category Watcher intelligence scan for the '{category}' category. "
         f"Today is {run_date}. "
         f"Pull supplier directory, market intel, industry risks, regulations, and certification register. "
         f"Synthesise findings into a structured JSON object with keys: "
