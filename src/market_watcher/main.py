@@ -3,8 +3,6 @@ Run: uv run streamlit run src/market_watcher/main.py
 """
 
 import os
-import sys
-from pathlib import Path
 
 import streamlit as st
 
@@ -16,7 +14,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Check for API key before anything else
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -40,12 +37,12 @@ except Exception as e:
     st.warning(f"Vector index unavailable (non-critical): {e}")
 
 from market_watcher.ui.styles import CENTRICA_CSS
-from market_watcher.ui import tab_digest, tab_dashboard, tab_strategy, tab_buyer_guide
+from market_watcher.ui import tab_digest, tab_dashboard, tab_strategy, tab_category_placeholder
+from market_watcher.tools.mock_services import get_categories
 
-# Inject brand CSS
 st.markdown(CENTRICA_CSS, unsafe_allow_html=True)
 
-# Sidebar branding
+# Sidebar
 with st.sidebar:
     st.markdown(
         """<div style="text-align:center;padding:1rem 0;">
@@ -59,28 +56,37 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     st.markdown("---")
-    st.markdown("**Category:** IT Software")
-    st.markdown("**Vendors:** Microsoft · SAP · Oracle · Salesforce · ServiceNow · Workday · Atlassian · Pega · Snowflake")
-    st.markdown("**Mode:** Mock presentation demo")
+    categories_meta = get_categories()
+    live_count = sum(1 for c in categories_meta if c["status"] == "Live")
+    pilot_count = sum(1 for c in categories_meta if c["status"] == "Pilot")
+    st.markdown(f"**Categories tracked:** {len(categories_meta)}")
+    st.markdown(f"&nbsp;&nbsp;&nbsp;✅ Live: {live_count}")
+    st.markdown(f"&nbsp;&nbsp;&nbsp;🚀 Pilot: {pilot_count}")
+    st.markdown(f"&nbsp;&nbsp;&nbsp;⏳ Coming soon: {len(categories_meta) - live_count - pilot_count}")
+    total_spend = sum(c["spend_gbp_m"] for c in categories_meta)
+    st.markdown(f"**Total spend covered:** £{total_spend:,.0f}m")
     st.markdown("---")
     st.caption("Powered by Google Gemini 2.5 · openai-agents SDK")
 
-# Main tabs
-tab1, tab2, tab3, tab4 = st.tabs([
-    "📋  Monday Digest",
-    "📊  Category Dashboard",
-    "📘  Category Strategy",
-    "🛒  Buyer Guide",
-])
 
-with tab1:
-    tab_digest.render()
+# ── Top-level CATEGORY tabs ──────────────────────────────────────────────────
+tab_labels = [f"{c['icon']}  {c['name']}" for c in categories_meta]
+cat_tabs = st.tabs(tab_labels)
 
-with tab2:
-    tab_dashboard.render()
-
-with tab3:
-    tab_strategy.render()
-
-with tab4:
-    tab_buyer_guide.render()
+for tab_obj, category in zip(cat_tabs, categories_meta):
+    with tab_obj:
+        if category["id"] == "it_software":
+            # Full Market Watcher stack — 3 sub-tabs
+            sub_tabs = st.tabs([
+                "📋  Monday Digest",
+                "📊  Category Dashboard",
+                "📘  Category Strategy",
+            ])
+            with sub_tabs[0]:
+                tab_digest.render()
+            with sub_tabs[1]:
+                tab_dashboard.render()
+            with sub_tabs[2]:
+                tab_strategy.render()
+        else:
+            tab_category_placeholder.render(category)

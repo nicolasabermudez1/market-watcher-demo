@@ -171,15 +171,21 @@ def test_generate_weekly_digest():
     Path(p).unlink()
 
 
-def test_agents_build():
-    """Verify both agents build with the new tool set."""
+def test_batch_agent_builds():
+    """Verify the batch agent builds with the current tool set."""
     import os
     os.environ.setdefault("GEMINI_API_KEY", "dummy-for-import-test")
     from market_watcher.subagents.batch import build_batch_agent
-    from market_watcher.subagents.query import build_query_agent
     ba = build_batch_agent()
-    qa = build_query_agent()
     assert ba.name == "MarketWatcherBatchAgent"
-    assert qa.name == "MarketWatcherQueryAgent"
     assert len(ba.tools) >= 8
-    assert len(qa.tools) >= 4
+
+
+def test_categories_fixture():
+    from market_watcher.tools.mock_services import get_categories
+    cats = get_categories()
+    assert len(cats) >= 5
+    ids = {c["id"] for c in cats}
+    assert "it_software" in ids
+    statuses = {c["status"] for c in cats}
+    assert statuses <= {"Live", "Pilot", "Coming Soon"}

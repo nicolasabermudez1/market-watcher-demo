@@ -100,6 +100,10 @@ def get_category_strategy() -> dict:
     return _load_fixture("category_strategy.json")
 
 
+def get_categories() -> list[dict]:
+    return _load_fixture("categories.json")
+
+
 def get_psl_search(category: str, criteria_weights: dict) -> list[dict]:
     """Rank PSL suppliers by criteria_weights. Generic scoring derived from supplier fixtures."""
     suppliers_raw = []
