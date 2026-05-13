@@ -1,0 +1,156 @@
+{
+  "category": "IT Software",
+  "owner": "Emma Hartley — Senior Category Manager",
+  "last_reviewed": "2026-05-11",
+  "next_review": "2027-02-11",
+  "strategy_horizon": "FY26 – FY28",
+  "vision": "Deliver a resilient, AI-native IT software estate for Centrica that balances cost, sovereignty, ESG and innovation — while removing single-vendor concentration risk and meeting OFGEM RIIO-3 supply-chain assurance.",
+  "objectives": [
+    {"objective": "Reduce hyperscaler concentration from 68% to 55% of category spend", "target": "55% by FY28", "status": "On track"},
+    {"objective": "Eliminate certification compliance gaps across PSL", "target": "100% Cyber Essentials Plus + ISO 27001", "status": "At risk"},
+    {"objective": "Close Scope 3 reporting gap for IT Software supply chain", "target": "9/9 vendors with Scope 3 attestation", "status": "On track"},
+    {"objective": "Achieve £1.6m annualised savings through renewal benchmarking", "target": "£1.6m by FY27", "status": "On track"},
+    {"objective": "S/4HANA migration completed (ECC EoL 2027)", "target": "Go-live Q4 FY27", "status": "On track"},
+    {"objective": "Embed AI-pricing-cap clauses in all GenAI renewals", "target": "100% of GenAI renewals", "status": "Behind"}
+  ],
+
+  "porters": {
+    "title": "Porter's Five Forces — IT Software (Buyer perspective)",
+    "forces": [
+      {
+        "force": "Threat of new entrants",
+        "level": "Medium",
+        "trend": "rising",
+        "assessment": "Cloud-native challengers (Snowflake, Atlassian) entering steadily. Open-source ERP (Odoo) and CRM (SuiteCRM) becoming credible at the margins. Yet hyperscaler distribution moats remain formidable.",
+        "implication": "Maintain a 'challenger scout' brief — Snowflake onboarding (2025) showed value. Test 1 net-new vendor per FY."
+      },
+      {
+        "force": "Bargaining power of buyers (us)",
+        "level": "Medium",
+        "trend": "stable",
+        "assessment": "Centrica is a meaningful FTSE 100 buyer (~£23m IT software spend) but switching cost across Microsoft / SAP / Oracle is structurally high. Joint procurement with other UK utilities could shift the balance.",
+        "implication": "Aggregate demand with British Gas, Bord Gáis, Hive. Explore CIPS UK utilities buying consortium pilot."
+      },
+      {
+        "force": "Bargaining power of suppliers",
+        "level": "High",
+        "trend": "rising",
+        "assessment": "Three vendors hold 68% of spend. Pricing inflation runs 7–12% YoY. GenAI add-ons (Copilot, Agentforce, Now Assist) introduce new per-seat / per-conversation cost vectors. Oracle audit posture remains aggressive.",
+        "implication": "Multi-cloud, multi-suite by design. Embed price-cap and rate-card clauses in every renewal."
+      },
+      {
+        "force": "Threat of substitutes",
+        "level": "Medium",
+        "trend": "rising",
+        "assessment": "Open-source alternatives strengthening (PostgreSQL vs Oracle DB; Odoo vs SAP for non-core; Mattermost vs Teams in OT). LLM-built micro-apps replacing some low-code use cases.",
+        "implication": "Test open-source substitution where regulatory and OT constraints permit. Build in-house GenAI tooling for narrow use cases."
+      },
+      {
+        "force": "Industry rivalry",
+        "level": "High",
+        "trend": "rising",
+        "assessment": "Hyperscaler price war reshaped by GenAI investment cycle. CRM / ITSM / HCM increasingly converging — multiple suites pitching for the same workflows.",
+        "implication": "Exploit competitive tension at every renewal. Refuse single-source RFPs for any spend >£250k."
+      }
+    ]
+  },
+
+  "swot": {
+    "strengths": [
+      "Mature category-management discipline (cat-plan reviewed every 9 months)",
+      "Single, governed PSL — 9 vendors covering ≥95% of spend",
+      "Strong supplier-relationship-management cadence (QBRs on top 4)",
+      "Group scale — joint procurement leverage across British Gas / Bord Gáis / Hive"
+    ],
+    "weaknesses": [
+      "68% spend concentration in three hyperscalers — structurally high switching cost",
+      "5 of 27 certifications expired or expiring within 90 days",
+      "Limited GenAI commercial expertise — pricing models still maturing",
+      "Slow renewal cycles — 3 out of 8 contracts running on rolling extensions"
+    ],
+    "opportunities": [
+      "Consolidate fragmented dev-tooling spend (Atlassian, GitHub, GitLab)",
+      "Leverage Microsoft EA scale for Copilot at concession pricing",
+      "Snowflake committed-use migration → 25% unit-cost reduction",
+      "S/4HANA bundle commercial leverage with SAP via RISE",
+      "Net-new vendor scout (Q2 FY27) → bring in 1 disruptor per segment"
+    ],
+    "threats": [
+      "EU AI Act compliance burden on GenAI tooling",
+      "OFGEM RIIO-3 IT supply-chain attestation (2027) — non-trivial evidence collection",
+      "Oracle licensing audit — £600k–£1.2m exposure",
+      "Hyperscaler pricing inflation outpacing IT inflation index",
+      "Activist-investor activity at Pega — strategic continuity risk"
+    ]
+  },
+
+  "kraljic": {
+    "title": "Kraljic Matrix — IT Software vendors",
+    "description": "Vendor classification by spend exposure (vertical) and supply-side risk (horizontal). Drives differentiated sourcing approach.",
+    "axes": {"x": "Supply-side risk →", "y": "↑ Spend impact"},
+    "quadrants": [
+      {
+        "name": "Strategic",
+        "subtitle": "High spend · High risk",
+        "color": "#0F2067",
+        "approach": "Partnership · joint roadmap · multi-year commercial · executive sponsorship",
+        "vendors": ["Microsoft", "SAP", "Oracle"]
+      },
+      {
+        "name": "Leverage",
+        "subtitle": "High spend · Low risk",
+        "color": "#85DB9C",
+        "approach": "Competitive tendering · price-driven · multi-source · benchmark every renewal",
+        "vendors": ["Salesforce", "ServiceNow", "Workday"]
+      },
+      {
+        "name": "Bottleneck",
+        "subtitle": "Low spend · High risk",
+        "color": "#9B2BF7",
+        "approach": "Develop alternatives · stockpile evidence · contingency planning",
+        "vendors": ["Pega"]
+      },
+      {
+        "name": "Routine",
+        "subtitle": "Low spend · Low risk",
+        "color": "#B999F6",
+        "approach": "Simplify · automate · consume via marketplace where possible",
+        "vendors": ["Atlassian", "Snowflake"]
+      }
+    ]
+  },
+
+  "sourcing_strategy": {
+    "approach": "Multi-source by design with strategic depth on the top 3",
+    "allocation_targets": [
+      {"segment": "Productivity & Cloud", "current": "Microsoft 100%", "target": "Microsoft 80% / GCP or AWS 20% by FY28", "rationale": "Reduce single-vendor concentration"},
+      {"segment": "ERP & S2P", "current": "SAP 100%", "target": "SAP 100% (mandated by S/4HANA migration)", "rationale": "Strategic lock-in justified by integration depth"},
+      {"segment": "Database & ERP (legacy)", "current": "Oracle 100%", "target": "Oracle 60% / PostgreSQL 40% by FY28", "rationale": "Open-source substitution where regulatory permits"},
+      {"segment": "CRM", "current": "Salesforce 100%", "target": "Maintain", "rationale": "Competitive segment, easy to benchmark"},
+      {"segment": "ITSM", "current": "ServiceNow 100%", "target": "Maintain", "rationale": "Switching cost outweighs marginal savings"},
+      {"segment": "HCM", "current": "Workday 100%", "target": "Benchmark via RFP Q2 FY26", "rationale": "Renewal cycle"},
+      {"segment": "DevOps & Collab", "current": "Atlassian 70% / GitHub 30%", "target": "Atlassian 50% / GitHub 50%", "rationale": "Consolidation savings"},
+      {"segment": "Customer Decisioning", "current": "Pega 100%", "target": "Pega 60% / Salesforce Service Cloud 40% by FY28", "rationale": "De-risk Pega strategic uncertainty"},
+      {"segment": "Data Platform", "current": "Snowflake 100%", "target": "Maintain (move to committed-use)", "rationale": "Spend predictability"}
+    ]
+  },
+
+  "stakeholders": [
+    {"role": "Procurement Director", "name": "Vince Patterson", "interest": "Strategic oversight · geopolitical risk · PLT reporting"},
+    {"role": "CIO Office", "name": "Sarah Baines", "interest": "Technical standards · enterprise architecture · CIO roadmap"},
+    {"role": "CISO Office", "name": "TBC", "interest": "ISO 27001 · NCSC alignment · OFGEM RIIO-3 readiness"},
+    {"role": "Finance", "name": "Helena Cross", "interest": "Cost variance · budget discipline · TCO transparency"},
+    {"role": "DPO / Legal", "name": "TBC", "interest": "EU AI Act · UK AI Bill · data residency · contract risk"},
+    {"role": "ESG / Sustainability", "name": "TBC", "interest": "Scope 3 reporting · net-zero supply chain · modern slavery"}
+  ],
+
+  "frameworks_applied": [
+    {"name": "Porter's 5 Forces", "purpose": "Industry-level competitive analysis", "owner": "Cat Mgr"},
+    {"name": "PESTLE", "purpose": "Macro-environmental scan", "owner": "Cat Mgr"},
+    {"name": "SWOT (buyer-view)", "purpose": "Internal capability and external context", "owner": "Cat Mgr + CIO"},
+    {"name": "Kraljic Matrix", "purpose": "Differentiated sourcing approach per vendor", "owner": "Cat Mgr"},
+    {"name": "Spend Cube (Ariba)", "purpose": "Quantitative spend baseline", "owner": "Finance + Procurement"},
+    {"name": "Risk Register", "purpose": "Active risk monitoring", "owner": "Cat Mgr + TPRM"},
+    {"name": "Stakeholder Map", "purpose": "Cross-functional alignment", "owner": "Cat Mgr"}
+  ]
+}

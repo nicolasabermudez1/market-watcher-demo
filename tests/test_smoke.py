@@ -120,6 +120,18 @@ def test_contract_pipeline_tool():
         assert c["priority"] in ("Critical", "High", "Medium", "Low")
 
 
+def test_category_strategy_tool():
+    from market_watcher.tools.mock_services import get_category_strategy
+    s = get_category_strategy()
+    assert "porters" in s
+    assert "swot" in s
+    assert "kraljic" in s
+    assert "sourcing_strategy" in s
+    assert "objectives" in s
+    assert len(s["porters"]["forces"]) == 5
+    assert len(s["kraljic"]["quadrants"]) == 4
+
+
 def test_market_intel_tool():
     from market_watcher.tools.mock_services import get_market_intel
     items = get_market_intel(limit=5)

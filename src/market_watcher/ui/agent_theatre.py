@@ -26,6 +26,8 @@ ACTIVITY_LIBRARY: dict[str, list[tuple[str, str]]] = {
         ("📈", "Bloomberg: scanning M&A, activist-investor and PE-acquisition signals..."),
         ("🏷️", "Connecting to Achilles — pulling supplier pre-qualification status and audit scores..."),
         ("🏷️", "Achilles: verifying UVDB / JOSCAR membership and compliance evidence..."),
+        ("🇬🇧", "Connecting to Companies House — pulling UK registration, filings, charges..."),
+        ("🇬🇧", "Companies House: checking PSC (Persons with Significant Control) and director changes..."),
         ("📊", "Connecting to SAP Ariba — extracting IT Software category spend..."),
         ("📊", "Pulling Spend Cube — last 12 months by sub-category..."),
         ("📋", "Reading JD Edwards contract register — 47 active agreements..."),

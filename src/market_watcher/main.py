@@ -40,7 +40,7 @@ except Exception as e:
     st.warning(f"Vector index unavailable (non-critical): {e}")
 
 from market_watcher.ui.styles import CENTRICA_CSS
-from market_watcher.ui import tab_digest, tab_dashboard, tab_buyer_guide
+from market_watcher.ui import tab_digest, tab_dashboard, tab_strategy, tab_buyer_guide
 
 # Inject brand CSS
 st.markdown(CENTRICA_CSS, unsafe_allow_html=True)
@@ -66,9 +66,10 @@ with st.sidebar:
     st.caption("Powered by Google Gemini 2.5 · openai-agents SDK")
 
 # Main tabs
-tab1, tab2, tab3 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "📋  Monday Digest",
-    "📊  Supplier Dashboard",
+    "📊  Category Dashboard",
+    "📘  Category Strategy",
     "🛒  Buyer Guide",
 ])
 
@@ -79,4 +80,7 @@ with tab2:
     tab_dashboard.render()
 
 with tab3:
+    tab_strategy.render()
+
+with tab4:
     tab_buyer_guide.render()

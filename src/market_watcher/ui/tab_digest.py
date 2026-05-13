@@ -185,11 +185,12 @@ def _render_sources_badges():
         ("💼", "Dun & Bradstreet", "Risk scores · PayDex · family tree", "#0F2067"),
         ("📈", "Bloomberg Intelligence", "Market cap · M&A · earnings", "#9B2BF7"),
         ("🏷️", "Achilles", "UVDB · JOSCAR · audit evidence", "#B999F6"),
-        ("📡", "Gartner", "Magic Quadrant · Hype Cycle", "#0F2067"),
-        ("📡", "Forrester", "Wave reports", "#9B2BF7"),
+        ("🇬🇧", "Companies House", "UK filings · PSC · charges", "#0F2067"),
+        ("📡", "Gartner", "Magic Quadrant · Hype Cycle", "#9B2BF7"),
+        ("📡", "Forrester", "Wave reports", "#B999F6"),
         ("📊", "SAP Ariba", "Spend cube · contracts", "#85DB9C"),
         ("🧾", "Ecovadis", "ESG scorecards", "#85DB9C"),
-        ("🌐", "FT · Reuters · Bloomberg News", "Real-time news", "#B999F6"),
+        ("🌐", "FT · Reuters · Bloomberg News", "Real-time news", "#0F2067"),
     ]
     st.markdown(
         "<div style='font-size:0.78rem;color:#666;margin-bottom:6px;'>"
